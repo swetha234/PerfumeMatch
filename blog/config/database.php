@@ -15,8 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
-
+    'default' => env('DB_CONNECTION', 'mongodb'),
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -41,6 +40,15 @@ return [
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
+        ],
+
+        'mongodb' => [
+            'driver'   => 'mongodb',
+            'host'     => env('DB_HOST', 'localhost'),
+            'port'     => 27017,
+            'database' => 'blog',
+           
+           
         ],
 
         'mysql' => [
@@ -132,6 +140,7 @@ return [
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', 6379),
             'database' => env('REDIS_DB', 0),
+            'default' => env('DB_CONNECTION', 'mongodb'),
         ],
 
         'cache' => [
@@ -141,6 +150,7 @@ return [
             'port' => env('REDIS_PORT', 6379),
             'database' => env('REDIS_CACHE_DB', 1),
         ],
+       
 
     ],
 

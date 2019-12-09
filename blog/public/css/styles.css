@@ -1,0 +1,54 @@
+html,
+body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 70px;
+    color: black;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+#backgroundimage {
+    background-image: url(perfume.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.7;
+}
+#button1 {
+    color: black;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
